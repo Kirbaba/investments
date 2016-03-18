@@ -1,0 +1,35 @@
+.navbar-nav {
+	width: 100%;
+	text-align: center;
+	margin: 5px 0;
+	li {
+		float: none;
+		display: inline-block;	
+	}
+}
+
+.navigation {
+	display: block;
+	float: left;
+	position: relative;
+	width: 100%;
+	border: none;
+	background: none;
+	text-align: center;
+	ul {
+		li {
+			a {
+				font-family: $l;
+				font-size: 14px;
+				color: #424347;
+				padding: 10px;
+				position: relative;
+				@include transition(.3s);
+				&:hover, &:active, &:focus {
+					color: #D22E3E;
+				}
+			}
+		}
+	}
+}
+
