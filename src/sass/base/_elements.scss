@@ -6,3 +6,82 @@
 		background-image: url('../img/telephone.png');
 	}
 }
+
+.slick-slider { margin-bottom: 0px; }
+
+:focus {
+    outline: none!important;
+}
+
+.savemoney {
+	button.slick-next.slick-arrow {
+	width: 24px;
+	height: 23px;
+	right: 0;
+	&:before {
+		content: '';
+		content: "\f105";
+		font-family: FontAwesome;
+		color: #d0d5db;	
+		line-height: 23px;
+		text-align: center;
+	    font-size: 35px;
+	}
+	&:hover {
+		&:before {
+			text-shadow: 0px 0px 1px rgba(0, 0, 0, 1);
+		}		
+	}
+}
+button.slick-prev.slick-arrow {
+	width: 24px;
+	height: 23px;
+	left: inherit;
+	left: 0;
+	&:before {
+		content: '';
+		content: "\f104";
+		font-family: FontAwesome;
+		color: #d0d5db;	
+		text-align: center;	
+	    font-size: 35px;
+	}
+	&:hover {
+		&:before {
+			text-shadow: 0px 0px 1px rgba(0, 0, 0, 1);
+		}
+	}
+	
+	
+
+}
+}
+
+.irs-grid-pol {
+	display: none;
+}
+.irs-grid-text {
+	font-size: 15px;
+	color: #9c9ea0;
+}
+
+.irs-line {
+	background: #FFF;
+	border: none;
+}
+.irs-line, .irs-bar,.irs-bar-edge {
+    height: 29px;
+    top: 24px;
+    
+}
+.irs-bar,.irs-bar-edge {
+	background: #2095F2;
+	
+}
+
+.irs-slider {
+	background: #FFF;
+	border: none;
+    box-shadow: 0px 0px 0px 1px #2095F2;
+}
+

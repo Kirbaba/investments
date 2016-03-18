@@ -4,3 +4,85 @@
 	position: relative;
 	width: 100%;
 }
+
+.savemoney {
+	display: block;
+	float: left;
+	position: relative;
+	width: 100%;
+	padding: 40px 0;
+	background-color: #41546C;
+	h3 {
+		margin: 0;
+		text-align: center;
+		text-transform: uppercase;
+		color: #8CA0BA;
+	}
+}
+
+.calculator {
+	display: block;
+	float: left;
+	position: relative;
+	width: 100%;
+	padding: 50px 0;
+	background-color: #F3F6F8;
+	&--line {
+		display: block;
+		float: left;
+		width: 100%;	
+		margin: 25px 0;	
+	}
+	&--range {
+		display: block;
+		float: left;
+		width: 75%;
+		&--month {
+			display: block;
+			width: 70%;
+			margin: 0 auto;
+			&--procents {
+				display: block;
+				float: left;
+				width: 91.6923%; 
+				left: 4.05385%;
+				position: relative;
+				.js-grid-text-0{
+					display: block;
+					position: absolute;
+					left: 0%; margin-left: -2.15385%;
+				}
+				.js-grid-text-1{
+					display: block;
+					position: absolute;
+					left: 50%; visibility: visible; margin-left: -3.38462%;
+				}
+				.js-grid-text-2{
+					display: block;
+					position: absolute;
+					left: 100%; visibility: visible; margin-left: -3.38462%;
+				}
+			}
+		}
+	}
+	&--results {
+		display: block;
+		float: left;
+		width: 25%;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+		padding-left: 25px;
+		h4 {
+			text-align: left;
+			color: #2095F2;
+			font-size: 22px;
+			small {
+				display: block;
+				font-size: 15px;
+				color: #9C9EA0;
+				margin-bottom: 5px;				
+			}
+		}
+	}
+}
