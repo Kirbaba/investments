@@ -27,16 +27,27 @@
 	width: 100%;
 	padding: 50px 0;
 	background-color: #F3F6F8;
+	text-align: center;
 	&--line {
 		display: block;
 		float: left;
 		width: 100%;	
-		margin: 25px 0;	
-	}
+		margin: 0 0 25px 0;	
+		p {
+			font-size: 10px;
+			color: #9C9EA0;
+		}
+	}	
 	&--range {
 		display: block;
 		float: left;
 		width: 75%;
+		h3 {
+			text-align: center;
+			font-size: 23px;
+			color: #2095F2;
+			margin: 0;
+		}
 		&--month {
 			display: block;
 			width: 70%;
@@ -84,5 +95,53 @@
 				margin-bottom: 5px;				
 			}
 		}
+	}
+	&--right {
+		display: block;
+		float: left;
+		position: relative;
+		width: 100%;
+		border-left: 1px solid #D8DBDD;
+		.calculator--results {
+			width: 100%;
+		}
+		h2 {
+			text-align: left;
+			color: #9c9ea0;
+			font-size: 30px;
+			margin: 9px 0;
+			small {
+				display: block;
+				font-size: 15px;
+				color: #9C9EA0;
+				margin-bottom: 5px;				
+			}
+		}
+		h2.blue {
+			color: #2095f2;
+		}
+		h4 {
+			text-align: left;
+			color: #d22e3e;
+			font-size: 22px;
+			small {
+				display: block;
+				font-size: 15px;
+				color: #9C9EA0;
+				margin-bottom: 5px;				
+			}
+		}
+		.calculator--range h3 {
+			text-align: left;
+			padding-left: 25px;
+		}
+	}
+	&--btn {
+		@extend .header__topline--btn;
+		display: inline-block;
+		text-align: center;
+		width: inherit;
+		padding: 15px 50px;
+		margin: 30px 0 0;
 	}
 }
