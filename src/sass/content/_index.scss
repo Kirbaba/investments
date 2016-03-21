@@ -627,3 +627,22 @@
 		}
 	}
 }
+
+.renessans {
+	display: block;
+	float: left;
+	position: relative;
+	width: 100%;
+	padding: 50px 0;
+	img {
+		display: block;
+		float: left;
+		margin-bottom: 15px;
+		width: 100%;
+		height: auto;
+	}
+	p {
+		font-size: 15px;
+		color: #9C9EA0;
+	}
+}
