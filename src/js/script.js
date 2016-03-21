@@ -44,6 +44,7 @@ $(document).ready(function(){
    	"width": $('.calculator--range--month .irs-grid').width()
    });
 
+
 });
 
 jQuery(function ($) {
@@ -69,3 +70,9 @@ jQuery(function ($) {
 	});
 
 });
+
+ (function () {
+     lightbox.option({
+        'showImageNumberLabel': false
+     });
+})(jQuery);

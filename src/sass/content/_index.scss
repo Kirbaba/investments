@@ -587,3 +587,43 @@
 		}
 	}
 }
+
+.documentation {
+	display: block;
+	float: left;
+	position: relative;
+	width: 100%;
+	background-color: #F3F6F8;
+	padding: 50px 0;
+	&__flex {
+		@extend .forwhom__flex;
+	}
+	&__item {
+		width: 150px;
+		text-align: center;
+		margin: 25px 30px;
+		&--img {
+			display: block;
+			margin: 0 auto 15px;
+			width: 123px;
+			height: 123px;
+			@include border-radius(50%);
+			@include background-clip(padding-box);
+			background-color: #e5e5e5;
+			@include overflow-img;
+		}
+		h4 {
+			color: #4F5960;
+			font-size: 15px;
+			display: block;
+			float: left;
+			width: 100%;
+			margin: 5px 0 15px;
+		}
+		p {
+			font-size: 13px;
+			color: #ABACAE;
+			margin: 0;
+		}
+	}
+}
