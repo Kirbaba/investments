@@ -221,7 +221,7 @@
 			background-color: #4F5960;
 			left: 0;
 			right: 0;
-			top: 50%;
+			top: 48%;
 			-webkit-transform: translateY(-50%);
 			   -moz-transform: translateY(-50%);
 			    -ms-transform: translateY(-50%);
@@ -363,5 +363,64 @@
 			color: #4F5960;
 			font-size: 15px;
 		} 
+	}
+}
+
+.reviews {
+	display: block;
+	float: left;
+	position: relative;
+	width: 100%;
+	padding: 50px 0;
+	background-color: #F3F6F8;
+	&__slider {
+		display: block;
+		float: left;
+		position: relative;
+		width: 100%;
+		&--item {
+			display: block;
+			margin: 25px auto;
+			padding: 0 50px;
+			&--img {
+				display: block;
+				float: left;
+				position: relative;
+				width: 25%;
+				margin-right: 5%;
+				&--wrap {
+					display: block;
+					width: 148px;
+					height: 148px;
+					margin: 15px auto;
+					@include border-radius(50%);
+					position: relative;
+					@include overflow-img;
+				}
+			}
+			&--desc {
+				display: block;
+				float: left;
+				position: relative;
+				width: 70%;
+				h4 {
+					display: block;
+					float: left;
+					width: 100%;
+					font-size: 16px;
+					color: #2095F2;
+					margin: 0 0 15px;
+					small {
+						display: block;
+						font-size: 14px;
+						color: #686868;
+					}
+				}
+				p {
+					font-size: 14px;
+					color: #82888F;
+				}
+			}
+		}
 	}
 }

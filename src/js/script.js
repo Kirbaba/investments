@@ -24,6 +24,21 @@ $(document).ready(function(){
 
 	});
 
+   jQuery(function ($) {
+	    jQuery('.reviews__slider').slick({
+	        dots: false,
+	        infinite: true,
+	        autoplay: true,
+	        adaptiveHeight: true,
+	        speed: 300,
+	        arrows: true,        
+	        slidesToShow: 1,
+	        focusOnSelect: false,
+	        slidesToScroll: 1
+		});		
+
+	});
+
    $('.calculator--range--month--procents').css(
    {
    	"width": $('.calculator--range--month .irs-grid').width()

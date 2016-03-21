@@ -15,46 +15,114 @@
 
 .savemoney {
 	button.slick-next.slick-arrow {
-	width: 24px;
-	height: 23px;
-	right: 0;
-	&:before {
-		content: '';
-		content: "\f105";
-		font-family: FontAwesome;
-		color: #d0d5db;	
-		line-height: 23px;
-		text-align: center;
-	    font-size: 35px;
-	}
-	&:hover {
+		width: 24px;
+		height: 23px;
+		right: 0;
 		&:before {
-			text-shadow: 0px 0px 1px rgba(0, 0, 0, 1);
-		}		
-	}
-}
-button.slick-prev.slick-arrow {
-	width: 24px;
-	height: 23px;
-	left: inherit;
-	left: 0;
-	&:before {
-		content: '';
-		content: "\f104";
-		font-family: FontAwesome;
-		color: #d0d5db;	
-		text-align: center;	
-	    font-size: 35px;
-	}
-	&:hover {
-		&:before {
-			text-shadow: 0px 0px 1px rgba(0, 0, 0, 1);
+			content: '';
+			content: "\f105";
+			font-family: FontAwesome;
+			color: #d0d5db;	
+			line-height: 23px;
+			text-align: center;
+		    font-size: 35px;
+		}
+		&:hover {
+			&:before {
+				text-shadow: 0px 0px 1px rgba(0, 0, 0, 1);
+			}		
 		}
 	}
-	
-	
-
+	button.slick-prev.slick-arrow {
+		width: 24px;
+		height: 23px;
+		left: inherit;
+		left: 0;
+		&:before {
+			content: '';
+			content: "\f104";
+			font-family: FontAwesome;
+			color: #d0d5db;	
+			text-align: center;	
+		    font-size: 35px;
+		}
+		&:hover {
+			&:before {
+				text-shadow: 0px 0px 1px rgba(0, 0, 0, 1);
+			}
+		}
+	}
 }
+
+.reviews {
+	button.slick-next.slick-arrow {
+		background-image: none;
+	    width: 45px;
+	    height: 44px;
+	    @include border-radius(6px / 6px 6px 6px 6px);
+	    @include background-clip(padding-box);
+	    background-color: rgba(90,107,131,.7);
+	    @include transition(.3s);
+	    color: #FFF;
+	    text-align: center;
+	    margin-top: 0;
+	    right: 0;
+	    -webkit-transform: translateY(-50%);
+	       -moz-transform: translateY(-50%);
+	        -ms-transform: translateY(-50%);
+	         -o-transform: translateY(-50%);
+	            transform: translateY(-50%);
+	    &:hover, &:focus {
+	        background-color: rgba(255,204,0,.7);
+	        color: #4F3A18!important;
+	        button.slick-prev.slick-arrow:before {
+	        	 color: #4F3A18!important;
+	        }
+	    }
+		&:before {
+			content: '';		
+			content: "\f105";
+	        font-size: 30px;
+	        font-weight: 300;
+	        font-family: FontAwesome;
+		}
+	}
+	button.slick-prev.slick-arrow {
+		background-image: none;
+	    width: 45px;
+	    height: 44px;
+	    @include border-radius(6px / 6px 6px 6px 6px);
+	    @include background-clip(padding-box);
+	    background-color: rgba(90,107,131,.7);
+	    @include transition(.3s);
+	    color: #FFF;
+	    text-align: center;
+	    left: 5px;
+	    margin-top: 0;
+	    z-index: 99;
+	    -webkit-transform: translateY(-50%);
+	       -moz-transform: translateY(-50%);
+	        -ms-transform: translateY(-50%);
+	         -o-transform: translateY(-50%);
+	            transform: translateY(-50%);
+	     &:hover, &:focus {
+	        background-color: rgba(255,204,0,.7);
+	        color: #4F3A18!important;
+	        button.slick-prev.slick-arrow:before {
+	        	 color: #4F3A18!important;
+	        }
+	    }
+		&:before {
+			content: '';
+			 content: "\f104";
+	        font-size: 30px;
+	        font-weight: 300;
+	        font-family: FontAwesome;
+		}
+	}
+	.slick-prev:hover:before, .slick-prev:focus:before, .slick-next:hover:before, .slick-next:focus:before {
+		color: #4F3A18;
+	}
 }
 
 .irs-grid-pol {
