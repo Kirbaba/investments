@@ -157,3 +157,39 @@
 .lightbox {
 	display: none;
 }
+
+ .modal-content {
+ 	@extend .map__form;
+    display: block;
+    float: left;
+    position: relative;  
+    
+    background-color: rgba(255,255,255,.8);
+    @include border-radius(0px);
+  }
+  .modal-body {
+    display: block;
+    float: left;
+    position: relative;
+    width: 100%;    
+    padding: 0;
+  }
+  button.close {
+    color: #000;
+    outline: none!important;
+  }
+  .contacts--form--inp {
+    background-image: none;
+    padding-left: 10px;
+  }
+
+button.close {
+    color: #000;
+    outline: none !important;
+    top: 10px;
+    display: block;
+    position: absolute;
+    right: 10px;
+    font-size: 30px;
+    opacity: 1;
+}

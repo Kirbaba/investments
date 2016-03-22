@@ -48,6 +48,8 @@ $(document).ready(function(){
         'showImageNumberLabel': false
      });
 })(jQuery);
+	
+
 
 });
 
@@ -102,3 +104,44 @@ function init() {
     myMap.geoObjects.add(myPlacemark);
 } 
 
+$(function() {
+
+    $(window).scroll(function() {
+        if($(this).scrollTop() != 0) {
+            $('#toTop').fadeIn();
+        } else {
+            $('#toTop').fadeOut();
+        }
+    });
+    $('#toTop').click(function() {
+        $('body,html').animate({scrollTop: 0}, 1000);
+    });
+
+    $('.smoothScroll').click(function(event) {
+        event.preventDefault();
+        var href=$(this).attr('href');
+        var target=$(href);
+        var top = target.offset().top;
+        $('html,body').animate({
+            scrollTop: top
+        }, 1000);
+    });
+
+	
+});
+
+
+
+
+$(window).scroll(function () {
+   var head_h = $('.header').height() + $('.navigation').height() - 50;
+
+    if (window.pageYOffset > head_h) {
+    	console.log('yes man');
+        $(".navigation").addClass("navigation--fixed");
+        //$(".header--onScroll").removeClass(".header");       
+    } else {
+        // $(".header--onScroll").addClass("header");
+        $(".navigation").removeClass("navigation--fixed");
+    };
+});

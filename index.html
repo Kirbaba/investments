@@ -64,7 +64,7 @@
                         <!-- close .col-lg-2 col-md-2 col-sm-3 col-xs-6 -->
                         <!-- open .col-lg-2 col-md-2 col-sm-3 col-xs-6 -->
                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                            <a href="#" class="header__topline--btn">Узнать подробнее</a>
+                            <a href="#nowhere"  data-toggle="modal" data-target="#myModal"  class="header__topline--btn">Узнать подробнее</a>
                         </div>
                         <!-- close .col-lg-2 col-md-2 col-sm-3 col-xs-6 -->
                     </div>
@@ -94,15 +94,15 @@
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav navbar-center navigation__list">
                                                                    
-                                <li><a href="#go_home" class="smoothScroll">Калькулятор онлайн</a></li>
-                                <li><a href="#go_stock" class="smoothScroll">Преимущества</a></li>
-                                <li><a href="#go_store" class="smoothScroll">Как стать инвестором</a></li>
-                                <li><a href="#go_blog" class="smoothScroll">Для кого это</a></li>
-                                <li><a href="#go_reviews" class="smoothScroll">О компании</a></li>
-                                <li><a href="#go_subs" class="smoothScroll">Документация</a></li>
-                                <li><a href="#go_blog" class="smoothScroll">Гарантии</a></li>
-                                <li><a href="#go_reviews" class="smoothScroll">Смотреть презентацию</a></li>
-                                <li><a href="#go_subs" class="smoothScroll">Контакты</a></li>
+                                <li><a href="#go_calc" class="smoothScroll">Калькулятор онлайн</a></li>
+                                <li><a href="#go_adv" class="smoothScroll">Преимущества</a></li>
+                                <li><a href="#go_howto" class="smoothScroll">Как стать инвестором</a></li>
+                                <li><a href="#go_forwhom" class="smoothScroll">Для кого это</a></li>
+                                <li><a href="#go_about" class="smoothScroll">О компании</a></li>
+                                <li><a href="#go_doc" class="smoothScroll">Документация</a></li>
+                                <li><a href="#go_garant" class="smoothScroll">Гарантии</a></li>
+                                <li><a href="#" class="smoothScroll">Смотреть презентацию</a></li>
+                                <li><a href="#go_map" class="smoothScroll">Контакты</a></li>
                             </ul>
                         </div><!-- /.navbar-collapse -->
                     </div><!-- /.container-fluid -->
@@ -178,6 +178,7 @@
 
         <!-- open .calculator -->
         <section class="calculator">
+        <a id="go_calc" name="go_calc"></a>
             <!-- open .container -->
             <div class="container">
                 <!-- open .row -->
@@ -310,6 +311,7 @@
         
         <!-- open .advantages -->
         <section class="advantages">
+        <a id="go_adv" name="go_adv"></a>
             <!-- open .container -->
             <div class="container">
                 <!-- open .row -->
@@ -448,6 +450,7 @@
 
         <!-- open .howtobe -->
         <section class="howtobe">
+            <a id="go_howto" name="go_howto"></a>
             <!-- open .block_title -->
             <h2 class="block_title">КАК СТАТЬ ИНВЕСТОРОМ </h2>
             <!-- close .block_title -->
@@ -558,6 +561,7 @@
 
         <!-- open .forwhom -->
         <section class="forwhom">
+            <a id="go_forwhom" name="go_forwhom"></a>
             <!-- open .container -->
             <div class="container">
                 <!-- open .row -->
@@ -741,6 +745,7 @@
 
         <!-- open .about -->
         <section class="about">
+        <a id="go_about" name="go_about"></a>
             <!-- open .container -->
             <div class="container">
                 <!-- open .row -->
@@ -857,6 +862,7 @@
 
         <!-- open .documentation -->
         <section class="documentation">
+        <a id="go_doc" name="go_doc"></a>
             <!-- open .container -->
             <div class="container">
                 <!-- open .row -->
@@ -949,6 +955,7 @@
 
         <!-- open .renessans -->
         <section class="renessans">
+            <a id="go_garant" name="go_garant"></a>
             <!-- open .container -->
             <div class="container">
                 <!-- open .row -->
@@ -968,6 +975,7 @@
 
         <!-- open .map -->
         <section class="map">
+        <a id="go_map" name="go_map"></a>
             <!-- open #map -->
             <div id="map"></div>
             <!-- close #map -->
@@ -1043,7 +1051,7 @@
                         <!-- close .col-lg-2 col-md-2 col-sm-3 col-xs-6 -->
                         <!-- open .col-lg-2 col-md-2 col-sm-3 col-xs-6 -->
                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                            <a href="#" class="header__topline--btn">Узнать подробнее</a>
+                            <a href="#nowhere"  data-toggle="modal" data-target="#myModal" class="header__topline--btn">Узнать подробнее</a>
                         </div>
                         <!-- close .col-lg-2 col-md-2 col-sm-3 col-xs-6 -->
                     </div>
@@ -1054,6 +1062,30 @@
             <!-- close .container -->
         </footer>
         <!-- close .footer -->
+
+         <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <div class="modal-body">
+                    
+                     
+                        <!-- open .block_title -->
+                        <h2 class="block_title">
+                            ОСТАВЬТЕ ЗАЯВКУ<span>на бесплатную консультацию</span>
+                        </h2>
+                        <!-- close .block_title -->
+                        <input type="text" class="request--input" placeholder="Имя*"/>
+                        <input type="text" class="request--input" placeholder="Телефон*"/>
+                        <p>Мы гарантируем конфиденциальность</p>
+                        <a href="#" class="request--btn">Отправить заявку</a>
+                 
+                
+              </div>         
+            </div>
+          </div>
+        </div>
 
         <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
         <script src="js/bootstrap.min.js"></script> 
