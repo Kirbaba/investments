@@ -1,0 +1,26 @@
+.footer {
+	display: block;
+	float: left;
+	position: relative;
+	width: 100%;
+	padding: 45px 0;
+	background-color: #41494F;
+	.header__topline h4 {
+		color: #727F88;
+	}
+	.header__topline--phone {
+		i {
+			display: inline-block;
+		}
+		h4 {
+			display: inline-block;
+			line-height: 23px;
+		}
+	}
+	.header__topline--clock {
+		a {
+			display: inline-block;
+			margin: 0 5px;
+		}
+	}
+}

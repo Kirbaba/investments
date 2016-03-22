@@ -75,3 +75,25 @@ jQuery(function ($) {
 
 });
 
+ymaps.ready(init);
+        
+function init() {
+	var myMap = new ymaps.Map('map', {
+        center: [59.850527, 30.326033],
+        zoom: 15,
+        controls: [],        
+    })  ,
+    myPlacemark = new ymaps.Placemark([59.850527, 30.304693], {
+        hintContent: 'Санкт-Петербург пл. конституции д.3 корп 2 лит. А. 33 этаж БЦ Лидер Тауэр',
+        balloonContent: 'Санкт-Петербург пл. конституции д.3 корп 2 </br> лит. А. 33 этаж БЦ Лидер Тауэр'
+        
+    },
+    {
+        preset: 'islands#dotIcon',
+        iconColor: 'red'
+    })
+    
+    myMap.behaviors.disable('scrollZoom');
+    myMap.geoObjects.add(myPlacemark);
+} 
+
