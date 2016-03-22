@@ -78,8 +78,13 @@ jQuery(function ($) {
 ymaps.ready(init);
         
 function init() {
+	if ($(window).width() > 1024) {
+		var c = [59.850527, 30.326033];
+	} else {
+		var c = [59.843319, 30.304693];
+	}
 	var myMap = new ymaps.Map('map', {
-        center: [59.850527, 30.326033],
+		center: c,
         zoom: 15,
         controls: [],        
     })  ,

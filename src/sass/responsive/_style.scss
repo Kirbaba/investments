@@ -1,22 +1,147 @@
 @media only screen and (max-width: 1024px) {
-
+	.header__topline h4 {
+		font-size: 15px;
+	}
+	.map {
+		height: 800px;
+	}
+	.map__slider {
+		top: 120px;
+	}
+	.map__slider {
+		top: 555px;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		   -moz-transform: translateX(-50%);
+		    -ms-transform: translateX(-50%);
+		     -o-transform: translateX(-50%);
+		        transform: translateX(-50%);
+	}
+	.footer .header__topline--clock a {
+		width: 40px;
+	}
 }
 
 @media only screen and (max-width: 980px) {
-	
+	.header--icon {
+		width: 35px;
+		height: 34px;
+		margin-right: 5px;
+	}
+	.header__topline h4 {
+	    font-size: 12px;
+	    line-height: 34px;
+	}
+	.swiper-slide h2 {
+		font-size: 26px;
+	}
+	.swiper-slide .onslide {
+	    margin-left: -169px;
+	    margin-bottom: -85px;
+	    width: 41%;
+	}
+	.swiper-slide h2.with--img {
+		font-size: 21px;
+	}
+	.calculator--right {
+		.calculator--line {
+			display: inline-block;
+			width: auto;
+			
+		}
+		h2, h4 {
+			margin-top: 0;
+		}
+	}
+	.advantages__item--icon {
+		vertical-align: top;
+		img {
+			height: 40px;
+		}
+	}
+	.advantages__item {
+		padding: 0;
+	}
+	.howtobe__wrap:before {
+		content: none;
+	}
 }
 
 @media only screen and (max-width: 800px) {
 
 }
 
-@media only screen and (max-width: 736px) {
-
-	
+@media only screen and (max-width: 736px) {	
+	.navbar-nav li {
+	    float: none;
+	    display: inline-block;
+	    width: 100%;
+	    text-align: left;
+	}
+	.swiper-slide {
+		height: 400px;
+	}
+	.swiper-slide h2.with--img {
+	    font-size: 16px;
+	    text-align: center;
+	    max-width: 60%;
+	}
+	img.onslide {
+		display: none;
+	}
+	.swiper-slide h2 {
+		padding: 5px;
+		font-size: 18px;
+	    max-width: 60%;
+	}
+	.swiper-nav--wrap {
+		top: -200px;
+	}
+	.calculator--range {
+		width: 65%;
+	}
+	.calculator--results {
+		width: 35%;
+	}
+	.reviews__slider--item--img {
+		width: 100%;
+	}
+	.reviews__slider--item--desc {
+		width: 100%;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+		   padding-left: 15px;
+	}
+	.map__form, .map__slider {
+		width: 90%;
+	}
+	.footer .header__topline--clock {
+		margin-top: 0;
+	}
+	.request--stamp {
+		left: 0;
+		width: 100%;
+	}
+	.header__topline--logo {
+	    width: 50%;
+	    margin: 15px auto;
+	}
+	.header__topline h4 {
+    	font-size: 18px; 
+    }
 }
 
 @media only screen and (max-width: 500px) {
-	
+	.header__topline--clock {
+	    margin: 10px 0px;
+	}
+	.header__topline--phone {
+	    margin: 15px 0;
+	}
+	.savemoney h3 {
+		font-size: 12px;
+	}
 }
 
 @media only screen and (max-width: 320px) {
