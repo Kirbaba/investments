@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
    var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
         paginationClickable: true,
@@ -62,8 +63,22 @@ jQuery(function ($) {
 	    force_edges: true,
 	    grid_snap: true,
 	    hide_min_max: true,
-	    hide_from_to: true
+	    hide_from_to: true,
+         onStart: function (data) {
+            var slider = $("#range_50a").data("ionRangeSlider");
+            $("#invest--value").text(data.from_value);
+            $("#calc-today-result").text(data.from_value);
+            calc();
+        },
+         onChange: function (data) {
+            var slider = $("#range_50a").data("ionRangeSlider");
+            $("#invest--value").text(data.from_value);
+            $("#calc-today-result").text(data.from_value);
+            calc();
+        }
 	});
+   
+
    jQuery("#range_50").ionRangeSlider({
 	    type: "single",
 	    values: ["6", "12", "24"],
@@ -72,10 +87,54 @@ jQuery(function ($) {
 	    force_edges: true,
 	    grid_snap: true,
 	    hide_min_max: true,
-	    hide_from_to: true
+	    hide_from_to: true,        
+         onStart: function (data) {
+            var slider = $("#range_50").data("ionRangeSlider");
+            $("#calc--month").text(data.from_value);
+            calc();
+        },
+         onChange: function (data) {
+            var slider = $("#range_50").data("ionRangeSlider");
+            $("#calc--month").text(data.from_value);
+            calc();
+        }
 	});
 
 });
+
+function calc(){
+    var calc_invest_val = $('#invest--value').text();
+    var calc_invest_val_int = parseInt(calc_invest_val);
+
+    if (calc_invest_val_int == 100) {
+        calc_invest_val_int = 100000;
+    } 
+    else if (calc_invest_val_int == 500) {
+        calc_invest_val_int = 500000;
+    } 
+    else if (calc_invest_val_int == 1) {
+        calc_invest_val_int = 1000000;
+    } 
+    else if (calc_invest_val_int == 5) {
+        calc_invest_val_int = 5000000;
+    }
+        
+    var month = $('#calc--month').text();
+    if (month == 6) {
+        month = 0.25;
+    } else {
+        if (month == 12) {
+            month = 0.35;
+        } else {
+            month = 0.45;
+        }
+    }
+
+    var procents = calc_invest_val_int * month;
+    var i_get = calc_invest_val_int + procents;
+    $("#calc-procent-res").text(procents);
+    $("#calc--res").text(i_get);
+}
 
 ymaps.ready(init);
         
@@ -137,7 +196,6 @@ $(window).scroll(function () {
    var head_h = $('.header').height() + $('.navigation').height() - 50;
 
     if (window.pageYOffset > head_h) {
-    	console.log('yes man');
         $(".navigation").addClass("navigation--fixed");
         //$(".header--onScroll").removeClass(".header");       
     } else {
